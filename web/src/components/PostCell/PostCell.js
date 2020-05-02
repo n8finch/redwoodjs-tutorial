@@ -15,6 +15,10 @@ export const Loading = () => <div>Loading...</div>
 
 export const Empty = () => <div>Post not found</div>
 
+export const Failure = ({ error }) => (
+  <div>Error loading posts: {error.message}</div>
+)
+
 export const Success = ({ post }) => {
   return <Post post={post} />
 }
